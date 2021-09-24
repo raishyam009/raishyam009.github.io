@@ -21,9 +21,46 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Friends_.jpg/1280px-Friends_.jpg" height=300 width=450>
   <p> Friend are the most precious in any living 's life.Happy friendship day </p>
   
+  <p>feedback.How much did you likethe website?
+  <input type="radio" name="rating">excellent<br>
+  <i  nput type="radio" name="rating">good<br>
+  <input type="radio" name="rating">bad<br>
+  <input type="radio" name="rating">worst</br>
+  </p>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var feedback = document.getElementById("myInput").value;
+  var text;
+
+  // If the feedback is "bad"
+  if (feedback === "bad") {
+    text = "bsdk kabhi tune website banai h,bloody raskal!";
+    
+  // If the feedback is "excellent" or "good"
+  } else if (feedback === "excellent" || feedback === "good") {
+    text = "thank you,we will make it more good.";
+    
+  // If the feedback is anything else
+  } else {
+    text = "bloddy,bastard,fuck off,dick head,pubic hair,asshole,butt plug,waaay off..";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+  
+  
+  
+  
   How much did you like website,<br>
   <input type="radio" name="rating">excellent<br>
-  <input type="radio" name="rating">good<br>
+  <i  nput type="radio" name="rating">good<br>
   <input type="radio" name="rating">bad<br>
   <input type="radio" name="rating">worst</br>
   
