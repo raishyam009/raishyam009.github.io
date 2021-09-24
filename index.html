@@ -2,7 +2,12 @@
 <html>
 <title>Radheshyam is learning HTML</title>
 <body BGCOLOR="33CFFF">
-  <h1> Indian flag is tricolour flag  </h1>
+  
+   gender<input type="radio" name="gender">Male
+  <input type="radio" name="gender">Female
+  
+  if (gender=="male")
+   console.log('<h1> Indian flag is tricolour flag  </h1>
   <h2><a href="https://en.wikipedia.org/wiki/Flag_of_India">INDIAN FLAG</a></h2>
   <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/383px-Flag_of_India.svg.png">
   
@@ -16,35 +21,12 @@
   
   <p> There is a blue colour ashok chakra in the middle of the flag with 24 spokes in it.</p>
 
- select gender<input type="radio" name="gender">Male
-  <input type="radio" name="gender">Female
-     <script>
-      const checkBox = document.querySelector('input');
-      const para = document.querySelector('p');
-      let shoppingDone = false;
-
-      checkBox.addEventListener('change',function() {
-        checkBox.disabled = true;
-        shoppingDone = true;
-        updateAllowance();
-      });
-
-      function updateAllowance() {
-        if(shoppingDone === true) {
-          var childsAllowance = 10;
-        } else {
-          var childsAllowance = 5;
-        }
-
-        para.textContent = 'Child has earned $' + childsAllowance + ' this week.';
-      }
-
-      updateAllowance();
-    </script>
-  
   <h3><a href="https://en.wikipedia.org/wiki/Friends">Friends</a></h3>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Friends_.jpg/1280px-Friends_.jpg" height=300 width=450>
-  <p> Friend are the most precious in any living 's life.Happy friendship day </p>
+  <p> Friend are the most precious in any living 's life.Happy friendship day </p>');
+ 
+  else
+  console.log('chal nikla phaele fursat me');
   
 </body>
 </html>
