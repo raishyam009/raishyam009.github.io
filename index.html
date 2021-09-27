@@ -23,40 +23,6 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Friends_.jpg/1280px-Friends_.jpg" height=300 width=450>
   <p> Friend are the most precious in any living 's life.Happy friendship day </p>
   
-  <h4>FEEDBACK.How much did you like the website?<br>
-    Excellent<br>
-    Good<br>
-    Bad<br>
-    Worst</br>
-  </h4>
-
-<input id="myInput" type="text">
-
-<button onclick="myFunction()">submit</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var feedback = document.getElementById("myInput").value;
-  var text;
-
-  // If the feedback is "Bad" or "bad"
-  if (feedback === "Bad" || feedback === "bad") {
-    text = "Oh,thanks we'll see towards the problems.😑😐😎🙄😏";
-    
-  // If the feedback is "Excellent" or "Good" or "excellent" or "good"
-  } else if (feedback === "Excellent" || feedback === "Good" || feedback === "good" || feedback === "excellent") {
-    text = "thank you, we will make it more better.😃😎😀😊😉.."; 
-    
-  // If the feedback is anything else
-  } else {
-    text = "Oops! Unable to send feedback please enter something else.🤣😂🤣😎😋😎😉..";
-  }
-  document.getElementById("demo").innerHTML = text;
-}
-</script>
-  
   <table border="1">
       <tbody>
       <tr>
@@ -111,6 +77,40 @@ function myFunction() {
  
   <iframe width="560" height="315" src="https://www.youtube.com/embed/5RFW0eTqGic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+  <h4>FEEDBACK.How much did you like the website?<br>
+    Excellent<br>
+    Good<br>
+    Bad<br>
+    Worst</br>
+  </h4>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var feedback = document.getElementById("myInput").value;
+  var text;
+
+  // If the feedback is "Bad" or "bad"
+  if (feedback === "Bad" || feedback === "bad") {
+    text = "Oh,thanks we'll see towards the problems.😑😐😎🙄😏";
+    
+  // If the feedback is "Excellent" or "Good" or "excellent" or "good"
+  } else if (feedback === "Excellent" || feedback === "Good" || feedback === "good" || feedback === "excellent") {
+    text = "thank you, we will make it more better.😃😎😀😊😉.."; 
+    
+  // If the feedback is anything else
+  } else {
+    text = "Oops! Unable to send feedback please enter something else.🤣😂🤣😎😋😎😉..";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+  
 </body>
 </html>
 
