@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body style="background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?size=626&ext=jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+  
+    <div>
+      <a href="index.html">Main page</a><span> | </span>
+      <a href="Ipl record.html">Ipl records</a><span> | </span>
+      <a href="gallery.html">Gallery</a><span> | </span>
+      <a href="videos.html">Videos</a><span> | </span>
+      <a href="survey.html">Survey</a>
+    </div>
+    
+    <br>
+    <h2>Which national park did you like?</h2>
+    <form action="submit.html">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="gender">Gender:</label><br>    
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="favorite">Favourite National Park:</label><br>
+
+        <select name="favorite" id="favorite">
+            <option></option>
+            <option value="Africa">Bwindi Impenetrable National park</option>
+            <option value="Asia">Valley of Flowers Uttaranchal</option>
+            <option value="Europe">Mljet National park Croatia</option>
+            <option value="North America">Yellowstone national park</option>
+            <option value="South America">Torres del Paine National park</option>
+            <option value="Oceania">Aoraki Mount Cook</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+  
+  </body>
+</html>
