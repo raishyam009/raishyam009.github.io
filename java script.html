@@ -126,7 +126,7 @@ function add()
 
 function add()
   {
-    var a = document.getElementById("num1").value;
+    var a =document.getElementById("num1").value;
     var b = document.getElementById("num2").value;
     
     var result = Number(a) + Number(b);
@@ -136,7 +136,60 @@ function add()
     document.getElementById("res").innerHTML=result;
   }
       
-   
+   <br><br>
+  <h1>Arithmetic operations</h1>
+  <h3>
+    <input type="text" id="num1">
+    <span id="operator"> op </span>
+    <input type="text" id="num2">
+    <span>  =  </span>
+    <span id="res"></span>
+  </h3>
+  
+  <button onclick="arithmetic('add')">Add</button>
+  <button onclick="arithmetic('subtract')">Subtract</button>
+  <button onclick="arithmetic('multiply')">Multiply</button>
+  <button onclick="arithmetic('divide')">Divide</button>
+
+
+
+
+function arithmetic(operation)
+  {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    
+    num1 = Number(a);
+    num2 = Number(b);
+    
+    var result = 0;
+    if(operation == "add")
+    {
+      result = num1 + num2;
+      
+      document.getElementById("operator").innerHTML=" + "
+    }
+    else if(operation == "subtract")
+    {
+      result = num1 - num2;
+      
+      document.getElementById("operator").innerHTML=" - "
+    }
+    else if(operation == "multiply")
+    {
+      result = num1 * num2;
+      
+      document.getElementById("operator").innerHTML=" X "
+    }
+    else if(operation == "divide")
+    {
+      result = num1 / num2;
+      
+      document.getElementById("operator").innerHTML=" / "
+    }
+    
+    document.getElementById("res").innerHTML=result;
+  }
       
   </body>
   </head>
