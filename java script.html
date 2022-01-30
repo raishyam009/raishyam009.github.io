@@ -1,142 +1,30 @@
+<!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <script>
-      console.log("hi we are learning HTML.")
-      console.log("addition of numbers:" +(6+9))
+      console.log("Hi we are learning Javascript.")
+      console.log("Addition of numbers: " + (2+3-10))
     </script>
-    <body>
-     
-      <p id="text1">Change my text.</p> 
+</head>
+
+<body>
+  
+  <p id="text1">Change my text.</p> 
   <p id="text2"></p>
   
   <button id="button1" 
-  onclick="document.getElementById('text2').innerHTML='New text appears'
-  document.getElementById('button1').style.display='none'" >Create new text</button>
+  onclick="document.getElementById('text2').innerHTML='New text appears'" >Create new text</button>
   
-  <button id="button2" onclick=hidebutton1()>Show button1</button>
+  <button id="button2" onclick=hidebutton1()>Hide button1</button>
 
 <br><br>
   <input type="text" id="display1" oninput="updatetext1display()">
   <br><br>
   <h2 id="text1display"></h2>
   
-
-<script>
   
-  document.getElementById("text1").innerHTML = "Updated through javascript"
-  
-  function hidebutton1()
-  {
-    document.getElementById("button1").style.display="block"
-    document.getElementById("button2").style.display="none"
-  }
-  
-  function updatetext1display()
-  {
-    document.getElementById("text1display").innerHTML = document.getElementById("display1").value;
-  }
-  
-      </script>
-
-      
-       <br><br>
-  <button onclick="document.getElementById('image1').style.display='block'">Show image</button>
-  
-  <button onclick="document.getElementById('image1').style.display='none'">Hide image</button>
-  
-  <img src="https://nationalparks-15bc7.kxcdn.com/images/parks/aoraki-mount-cook/20210206232653-Aroki%20Mount%20Cook%20National%20Park.jpg?width=320&height=240" id="image1">
-      
- var x = 5;
-  x=6;
-  
-  y=7;
-  z=x+y;
-  
-  console.log("value of x= " + x);
-  console.log("value of y= " + y);
-  console.log("value of z= " + z);
-      
-    <br><br>
-  <h1>Arithmetic operations</h1>
-  <h3>
-    <span id="num1">5</span>
-    <span id="operator"> op </span>
-    <span id="num2">7</span>
-    <span>  =  </span>
-    <span id="res"></span>
-  </h3>
-  
-  <button onclick="add()">Add</button>
-  <button onclick="subtract()">Subtract</button>
-  <button onclick="multiply()">Multiply</button>
-  <button onclick="divide()">Divide</button>
-
-
-function add()
-  {
-    var a = document.getElementById("num1").innerHTML;
-    var b = document.getElementById("num2").innerHTML;
-    
-    var result = Number(a) + Number(b);
-    
-    document.getElementById("operator").innerHTML=" + "
-    
-    document.getElementById("res").innerHTML=result;
-  }
-  
-  function subtract()
-  {
-    var a = document.getElementById("num1").innerHTML;
-    var b = document.getElementById("num2").innerHTML;
-    
-    var result = Number(a) - Number(b);
-    
-    document.getElementById("operator").innerHTML=" - ";
-    
-    document.getElementById("res").innerHTML=result;
-  }
- function multiple()
-  {
-    var a = document.getElementById("num1").innerHTML;
-    var b = document.getElementById("num2").innerHTML;
-    
-    var result = Number(a) x Number(b);
-    
-    document.getElementById("operator").innerHTML=" x ";
-    
-    document.getElementById("res").innerHTML=result;
-  }
-      
-      
- <br><br>
-  <h1>Arithmetic operations</h1>
-  <h3>
-    <input type="text" id="num1">
-    <span id="operator"> op </span>
-    <input type="text" id="num2">
-    <span>  =  </span>
-    <span id="res"></span>
-  </h3>
-  
-  <button onclick="add()">Add</button>
-  <button onclick="subtract()">Subtract</button>
-  <button onclick="multiply()">Multiply</button>
-  <button onclick="divide()">Divide</button>
-
-
-function add()
-  {
-    var a =document.getElementById("num1").value;
-    var b = document.getElementById("num2").value;
-    
-    var result = Number(a) + Number(b);
-    
-    document.getElementById("operator").innerHTML=" + "
-    
-    document.getElementById("res").innerHTML=result;
-  }
-      
-   <br><br>
+  <br><br>
   <h1>Arithmetic operations</h1>
   <h3>
     <input type="text" id="num1">
@@ -147,14 +35,7 @@ function add()
   </h3>
   
   <button onclick="arithmetic('add')">Add</button>
-  <button onclick="arithmetic('subtract')">Subtract</button>
-  <button onclick="arithmetic('multiply')">Multiply</button>
-  <button onclick="arithmetic('divide')">Divide</button>
-
-
-
-
-function arithmetic(operation)
+  <button onclick="arithmetic('subtract'function arithmetic(operation)
   {
     var a = document.getElementById("num1").value;
     var b = document.getElementById("num2").value;
@@ -190,7 +71,127 @@ function arithmetic(operation)
     
     document.getElementById("res").innerHTML=result;
   }
+  
+  ">Subtract</button>
+  <button onclick="arithmetic('multiply')">Multiply</button>
+  <button onclick="arithmetic('divide')">Divide</button>
+
+
+
+  <br><br>
+
+  <h2>Fibonacci sequence</h2>
+  <button onclick="printFibonacci()">Generate</button>
+  <p id="fib"></p>
+  
+  
+  
+  
+  
+  <p id="random"></p>
+  <button onclick="random()">Generate random</button>
+  
+<script>
+
+  document.getElementById("text1").innerHTML = "Updated through javascript"
+  
+  function hidebutton1()
+  {
+    document.getElementById("button1").style.display="none"
+  }
+  
+  function updatetext1display()
+  {
+    document.getElementById("text1display").innerHTML = document.getElementById("display1").value;
+  }
+  
+  
+  
+  function random()
+  {
+    document.getElementById("random").innerHTML = Math.round(Math.random()*100000);
+  };
+  
+  
+  
+  function arithmetic(operation)
+  {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    
+    num1 = Number(a);
+    num2 = Number(b);
+    
+    var result = 0;
+    if(operation == "add")
+    {
+      result = num1 + num2;
       
-  </body>
-  </head>
+      document.getElementById("operator").innerHTML=" + "
+    }
+    else if(operation == "subtract")
+    {
+      result = num1 - num2;
+      
+      document.getElementById("operator").innerHTML=" - "
+    }
+    else if(operation == "multiply")
+    {
+      result = num1 * num2;
+      
+      document.getElementById("operator").innerHTML=" X "
+    }
+    else if(operation == "divide")
+    {
+      result = num1 / num2;
+      
+      document.getElementById("operator").innerHTML=" / "
+    }
+    
+    document.getElementById("res").innerHTML=result;
+  }
+  
+  
+  
+  
+  
+  function printFibonacci()
+  {
+    var num = 0;
+    setInterval(function()
+    {
+      document.getElementById("fib").innerHTML += getFibonacci(num) + ", ";
+      num++;
+    }, 1000)
+  }
+
+  function getFibonacci(num)
+  {
+    var x = 0, y = 1, temp;
+    
+    while(num > 0)
+    {
+      temp = y;
+      y = x + y;
+      x = temp;
+      num--;
+    }
+    
+    return x;
+  }
+  
+  x = 6;
+  console.log(x);
+  x += 2; // equivalent to x = x + 2 
+  console.log(x);
+  x++;
+  console.log(x);
+  x--;
+  console.log(x);
+  
+  
+  
+</script>
+</body>
+
 </html>
