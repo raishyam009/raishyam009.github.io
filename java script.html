@@ -39,6 +39,107 @@
   
 </script>
       
+    <br><br>
+  <button onclick="document.getElementById('image1').style.display='block'">Show image</button>
+  
+  <button onclick="document.getElementById('image1').style.display='none'">Hide image</button>
+  
+  <img src="https://nationalparks-15bc7.kxcdn.com/images/parks/aoraki-mount-cook/20210206232653-Aroki%20Mount%20Cook%20National%20Park.jpg?width=320&height=240" id="image1">
+      
+      
+     var x = 5;
+  x=6;
+  
+  y=7;
+  z=x+y;
+  
+  console.log("value of x= " + x);
+  console.log("value of y= " + y);
+  console.log("value of z= " + z);
+      
+      [21:52, 29/01/2022] +1 (979) 985-7169: <br><br>
+  <h1>Arithmetic operations</h1>
+  <h3>
+    <span id="num1">5</span>
+    <span id="operator"> op </span>
+    <span id="num2">7</span>
+    <span>  =  </span>
+    <span id="res"></span>
+  </h3>
+  
+  <button onclick="add()">Add</button>
+  <button onclick="subtract()">Subtract</button>
+  <button onclick="multiply()">Multiply</button>
+  <button onclick="divide()">Divide</button>
+
+
+function add()
+  {
+    var a = document.getElementById("num1").innerHTML;
+    var b = document.getElementById("num2").innerHTML;
+    
+    var result = Number(a) + Number(b);
+    
+    document.getElementById("operator").innerHTML=" + "
+    
+    document.getElementById("res").innerHTML=result;
+  }
+  
+  function subtract()
+  {
+    var a = document.getElementById("num1").innerHTML;
+    var b = document.getElementById("num2").innerHTML;
+    
+    var result = Number(a) - Number(b);
+    
+    document.getElementById("operator").innerHTML=" - ";
+    
+    document.getElementById("res").innerHTML=result;
+  }
+ function multiple()
+  {
+    var a = document.getElementById("num1").innerHTML;
+    var b = document.getElementById("num2").innerHTML;
+    
+    var result = Number(a) x Number(b);
+    
+    document.getElementById("operator").innerHTML=" x ";
+    
+    document.getElementById("res").innerHTML=result;
+  }
+      
+      
+      <br><br>
+  <h1>Arithmetic operations</h1>
+  <h3>
+    <input type="text" id="num1">
+    <span id="operator"> op </span>
+    <input type="text" id="num2">
+    <span>  =  </span>
+    <span id="res"></span>
+  </h3>
+  
+  <button onclick="add()">Add</button>
+  <button onclick="subtract()">Subtract</button>
+  <button onclick="multiply()">Multiply</button>
+  <button onclick="divide()">Divide</button>
+
+
+
+
+
+function add()
+  {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    
+    var result = Number(a) + Number(b);
+    
+    document.getElementById("operator").innerHTML=" + "
+    
+    document.getElementById("res").innerHTML=result;
+  }
+      
     </body>
   </head>
 </html>
