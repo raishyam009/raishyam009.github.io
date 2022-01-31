@@ -68,13 +68,20 @@
       
       document.getElementById("operator").innerHTML=" / "
     }
-    
+    else if(operation == "percentage")
+    {
+      result = (num1 / num2)*100;
+      
+      document.getElementById("operator").innerHTML=" % "
+     }                                                    
+                                                         
     document.getElementById("res").innerHTML=result;
   }
   
   ">Subtract</button>
   <button onclick="arithmetic('multiply')">Multiply</button>
   <button onclick="arithmetic('divide')">Divide</button>
+  <button onclick="arithmetic('percentage')">percentage</button>
 
 
 
@@ -147,7 +154,14 @@
       
       document.getElementById("operator").innerHTML=" / "
     }
-    
+    else if(operation == "percentage")
+    {
+      result = (num1 / num2)*100;
+      
+      document.getElementById("operator").innerHTML=" % "
+    }
+      
+      
     document.getElementById("res").innerHTML=result;
   }
   
