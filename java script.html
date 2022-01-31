@@ -14,7 +14,7 @@
   <p id="text2"></p>
   
   <button id="button1" 
-  onclick="document.getElementById('text2').innerHTML='New text appears'" >Create new text</button>
+  onclick="document.getElementById('text2').innerHTML='Hi!How are you.'" >Another message</button>
   
   <button id="button2" onclick=hidebutton1()>Hide button1</button>
 
@@ -37,48 +37,6 @@
   <button onclick="arithmetic('add')">Add</button>
   <button onclick="arithmetic('subtract')">subtract</button>
   
-    {
-    var a = document.getElementById("num1").value;
-    var b = document.getElementById("num2").value;
-    
-    num1 = Number(a);
-    num2 = Number(b);
-    
-    var result = 0;
-    if(operation == "add")
-    {
-      result = num1 + num2;
-      
-      document.getElementById("operator").innerHTML=" + "
-    }
-    else if(operation == "subtract")
-    {
-      result = num1 - num2;
-      
-      document.getElementById("operator").innerHTML=" - "
-    }
-    else if(operation == "multiply")
-    {
-      result = num1 * num2;
-      
-      document.getElementById("operator").innerHTML=" X "
-    }
-    else if(operation == "divide")
-    {
-      result = num1 / num2;
-      
-      document.getElementById("operator").innerHTML=" / "
-    }
-    else if(operation == "percentage")
-    {
-      result = (num1 / num2)*100;
-      
-      document.getElementById("operator").innerHTML=" % "
-     }                                                    
-                                                         
-    document.getElementById("res").innerHTML=result;
-  }
-  
   <button onclick="arithmetic('multiply')">Multiply</button>
   <button onclick="arithmetic('divide')">Divide</button>
   <button onclick="arithmetic('percentage')">percentage</button>
@@ -100,7 +58,7 @@
   
 <script>
 
-  document.getElementById("text1").innerHTML = "Updated through javascript"
+  document.getElementById("text1").innerHTML = "WELCOME🙂..."
   
   function hidebutton1()
   {
