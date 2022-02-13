@@ -171,7 +171,24 @@
   x--;
   console.log(x);
   
-  
+  var toDo = [];
+
+  function addToDoItem()
+  {
+    var item = document.getElementById("ToDoItem").value;
+    
+    toDo.push(item);
+    document.getElementById("ToDoItem").value = "";
+    
+    var finalList = "<ul>";
+    for (var i=0; i<toDo.length; i++)
+    {
+      finalList += "<li>" + toDo[i] + "</li>"
+    }
+    finalList += "</ul>"
+    
+    document.getElementById("ToDoList").innerHTML = finalList;
+  }
   
 </script>
     
